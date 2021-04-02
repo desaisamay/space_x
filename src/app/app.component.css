@@ -1,0 +1,49 @@
+.bgc{
+    background-color: lightgrey;
+}
+
+.height{
+    height: 300px;
+}
+
+.padding{
+    padding: 10px;
+}
+
+.padding_more{
+    padding: 30px;
+}
+
+.margin-5{
+
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.border{
+    border: 2px solid black;
+    background: rgb(238, 238, 238);
+    margin: 30px;
+  
+}
+.blue_color{
+    color: blue;
+}
+.bg_whie{
+    background: white;
+}
+.border-btm{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.fontStyle{
+    font-size: 23px;
+    font-weight: 700;
+}
+.margin-tp{
+    margin-top: -30px;
+}
+.in-block{
+    display: inline-block;
+}

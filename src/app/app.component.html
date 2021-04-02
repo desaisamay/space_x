@@ -1,0 +1,51 @@
+
+<div class="row bgc padding_more">
+  <span class="fontStyle">SpaceX Launch Programs</span>
+</div>
+    <div class="row bgc padding">
+      <div class="col-md-2">
+
+        <div class="bg_whie">
+          <b>Filters</b>
+          <div class="border-btm">Launch Year</div>
+        <span *ngFor="let year of data | unique" >
+          <button type="button" class="btn btn-success margin-5"> {{year.launch_year}} </button>           
+        </span>
+
+        <div class="border-btm">Successful Launch</div>
+        <span *ngFor="let launch of success_launch_land" >
+          <button type="button" class="btn btn-success margin-5"> {{launch}} </button>           
+        </span>
+
+        <div class="border-btm">Successful Landing</div>
+
+        <span *ngFor="let land of success_launch_land" >
+          <button type="button" class="btn btn-success margin-5"> {{land}} </button>           
+        </span>
+
+      </div>
+
+      </div>
+
+      <div class="col-md-10 margin-tp">
+        
+
+        <div *ngFor="let year of data" class="border in-block">
+
+          <img [src]="year.links.mission_patch" height="244" width="244" >   
+          <div class="blue_color"><b> {{year.mission_name}} </b></div>    
+         <div> <b>Mission ID: </b><span class="blue_color"> {{year.mission_id[0]}} </span> </div>
+          <div> <b>Launch Year: </b><span class="blue_color"> {{year.launch_year}} </span></div>
+          <div> <b>Successful Launch: </b><span class="blue_color"> {{year.launch_success}} </span></div>
+          <div> <b>Successful Landing: </b><span class="blue_color"> {{year.rocket.first_stage.cores[0].land_success}} </span></div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    
+
+
+
